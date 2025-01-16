@@ -129,7 +129,7 @@ func main() {
 
 	for _, v := range blocks {
 		if idx := strings.Index(v.name, "0x"); idx != -1 {
-			if idx != 0 && idx-1 < len(v.name) {
+			if idx != 0 {
 				idx -= 1
 			}
 			v.name = v.name[:idx]
